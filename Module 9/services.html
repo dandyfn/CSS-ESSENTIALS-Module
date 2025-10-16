@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layanan Kami - Tech Solutions</title>
+  <link rel="stylesheet" href="services.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Tech Solutions</div>
+      <ul class="nav-list">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="about.html">Tentang</a></li>
+        <li><a href="services.html" class="active">Layanan</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+      <button class="contrast-btn" id="contrastToggle">Kontras</button>
+    </div>
+  </nav>
+
+
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Layanan Kami</h1>
+      <p>Kami menyediakan berbagai solusi digital untuk membantu bisnis Anda berkembang dan berinovasi di era teknologi.</p>
+    </div>
+  </header>
+
+
+  <section class="services">
+    <div class="section-header">
+      <h2>Solusi Terbaik untuk Bisnis Anda</h2>
+      <p>Kami menawarkan layanan profesional untuk memenuhi berbagai kebutuhan teknologi Anda.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2721/2721260.png" alt="Web Development">
+        <h3>Pengembangan Web</h3>
+        <p>Kami membuat situs web yang cepat, aman, dan mudah diakses untuk meningkatkan kehadiran digital bisnis Anda.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/609/609361.png" alt="IT Consulting">
+        <h3>Konsultasi IT</h3>
+        <p>Tim ahli kami siap membantu Anda dalam perencanaan, manajemen, dan implementasi strategi teknologi terbaik.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2621/2621039.png" alt="Mobile Apps">
+        <h3>Aplikasi Mobile</h3>
+        <p>Kami mengembangkan aplikasi Android dan iOS dengan desain intuitif dan performa tinggi untuk pengguna Anda.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/906/906175.png" alt="Cloud Solutions">
+        <h3>Solusi Cloud</h3>
+        <p>Optimalkan produktivitas Anda dengan solusi cloud yang aman dan mudah diintegrasikan dengan sistem bisnis.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <p>&copy; 2025 Tech Solutions. Semua Hak Dilindungi.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("contrastToggle");
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("high-contrast");
+    });
+  </script>
+</body>
+</html>

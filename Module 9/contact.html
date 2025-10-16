@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - Tech Solutions</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <nav class="navbar" aria-label="Navigasi utama">
+    <div class="nav-container">
+      <h1 class="logo">Tech Solutions</h1>
+      <ul class="nav-list">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="about.html">Tentang</a></li>
+        <li><a href="services.html">Layanan</a></li>
+        <li><a href="contact.html" class="active" aria-current="page">Kontak</a></li>
+      </ul>
+      <button id="contrastToggle" class="contrast-btn" aria-pressed="false">🌙 Mode Kontras Tinggi</button>
+    </div>
+  </nav>
+
+
+  <main class="contact-container">
+    <section class="contact-content">
+      <div class="contact-info">
+        <h2>Hubungi Kami</h2>
+        <p>
+          Kami senang mendengar dari Anda! Silakan isi formulir di samping atau hubungi kami melalui informasi berikut:
+        </p>
+        <ul>
+          <li><strong>Email:</strong> info@techsolutions.id</li>
+          <li><strong>Telepon:</strong> +62 812 3456 7890</li>
+          <li><strong>Alamat:</strong> Jl. Inovasi No. 12, Jakarta</li>
+        </ul>
+        <div class="contact-image">
+          <img src="telemarketer2.jpg" alt="Ilustrasi kontak pelanggan">
+        </div>
+      </div>
+
+      <form class="contact-form" aria-label="Formulir kontak pelanggan">
+        <h3>Kirim Pesan</h3>
+
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+
+        <label for="pesan">Pesan</label>
+        <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan Anda..." required></textarea>
+
+        <button type="submit" class="submit-btn">📨 Kirim Pesan</button>
+      </form>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <p>&copy; 2025 Tech Solutions. Semua Hak Dilindungi.</p>
+  </footer>
+
+  <script>
+    const toggleButton = document.getElementById('contrastToggle');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('high-contrast');
+      const aktif = document.body.classList.contains('high-contrast');
+      toggleButton.setAttribute('aria-pressed', aktif);
+      toggleButton.textContent = aktif ? "☀️ Mode Normal" : "🌙 Mode Kontras Tinggi";
+    });
+  </script>
+</body>
+</html>
